@@ -13,8 +13,8 @@ Userscripts works with [Greasemonkey](http://www.greasespot.net/ "Greasemonkey W
  *	[0.0]: Yellow hint of "false" duplicated Items they comes from old "ampersand" bug on SteamEP (not finally all discovered)
  *	[0.1]: Remove "Have"/"Need" on "false" duplicates -button
  *	[0.2]: Append Game Title under Game Banner (OBSOLETE already implemented from steamep.com)
- *	[0.3]: Set "Have" on Items thus are multiple exist -button
- *	[0.4]: Set "Need" on Items in same game set, where already is set one ore more "Have" that comes from a duplicate -button
+ *	[0.3]: Set "Have" on all Items you have twice or more -button
+ *	[0.4]: Set "Need" on all Items in the same game-set if already one or more HAVE's in there (occurring due to a multiple) -button
  *	[0.5]: Remove all "Need" -button
  *	[0.6]: Remove all "Have" -button
  *	[0.7]: Append "inventory marker" (blue dots) and quantity of duplicates on items in other lists
