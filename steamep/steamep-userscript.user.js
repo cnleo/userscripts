@@ -18,7 +18,7 @@
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
-// @version	0.8.1
+// @version	0.8.2
 
 // @run-at document-start
 // ==/UserScript==
@@ -39,10 +39,7 @@
  *
 **/
 
-var keys = GM_listValues();
-for (var i=0, key=null; key=keys[i]; i++) {
-  GM_deleteValue(key);
-}
+
 
 // HELPERS
 function hasClass(ele, cls) {
@@ -384,8 +381,7 @@ var invokeInterface = function () {
 	if (location.pathname == "/list/inventory" || location.pathname == "/grunt-test/testcases") { //https://steamep.com/list/inventory
 		contentDiv.insertBefore(newRow,contentDivChild);
 		
-	} else if  (location.pathname == "/list" || 
-				location.pathname == "/list/selected" || 
+	} else if  (location.pathname == "/list/selected" || 
 				location.pathname == "/grunt-test/testcases" || 
 				location.pathname == "/list/1" || 
 				location.pathname == "/list/2" || 
@@ -669,7 +665,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		observer.observe(gameItems[i], config);
 		
 		
-			
+		if (location.pathname == '/list/inventory') {
 			// get item number (unique)
 			var itemData = gameItems[i].getAttribute('data-item'); // get the item number
 			
