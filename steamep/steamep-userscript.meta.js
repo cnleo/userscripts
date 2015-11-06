@@ -15,7 +15,6 @@
 // @grant       GM_deleteValue
 // @grant       GM_listValues
 
-
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
