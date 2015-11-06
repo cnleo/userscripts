@@ -10,15 +10,15 @@ Userscripts works with [Greasemonkey](http://www.greasespot.net/ "Greasemonkey W
 
 ### What it does on steamep.com:
 
- *	[0.0]: ADD: Yellow hint of "false" duplicated Items they comes from old "ampersand" bug on SteamEP (not finally all discovered)
- *	[0.1]: ADD: Remove "Have"/"Need" on "false" duplicates -button
- *	[0.2]: OBSOLETE: ADD: Append Game Title under Game Banner (already implemented from steamep.com)
- *	[0.3]: ADD: Set "Have" on Items thus are multiple exist -button
- *	[0.4]: ADD: Set "Need" on Items in same game set, where already is set one ore more "Have" that comes from a duplicate -button
- *	[0.5]: ADD: Remove all "Need" -button
- *	[0.6]: ADD: Remove all "Have" -button
- *	[0.7]: ADD: Append "inventory marker" (blue dots) and quantity of duplicates on items in other lists
- *	[0.8]: NEED A FIX (currently fuzzy): ADD: Counting on items for nice overview and "haptic"
+ *	[0.0]: Yellow hint of "false" duplicated Items they comes from old "ampersand" bug on SteamEP (not finally all discovered)
+ *	[0.1]: Remove "Have"/"Need" on "false" duplicates -button
+ *	[0.2]: Append Game Title under Game Banner (OBSOLETE already implemented from steamep.com)
+ *	[0.3]: Set "Have" on Items thus are multiple exist -button
+ *	[0.4]: Set "Need" on Items in same game set, where already is set one ore more "Have" that comes from a duplicate -button
+ *	[0.5]: Remove all "Need" -button
+ *	[0.6]: Remove all "Have" -button
+ *	[0.7]: Append "inventory marker" (blue dots) and quantity of duplicates on items in other lists
+ *	[0.8]: Counting on items for nice overview and "haptic"
  
 ### To be observed:
 
@@ -27,7 +27,7 @@ The Userscript will load the information from it, and every time you visit the u
 
 ### To do:
 
- *	Counting on items that you can "modify" are fuzzy at moment. Sry for that.
+ *	Counting on items that you can "modify" are fuzzy at moment.
 
 
 
