@@ -3,9 +3,10 @@
 
 // @description	Expand user experience on steamep.com and fix a small bug (hopefully).
 
-// @downloadURL	https://github.com/cnleo/userscripts/steamep/steamep-userscript.user.js
+// @downloadURL	https://raw.githubusercontent.com/cnleo/userscripts/steamep/steamep-userscript.user.js
+// @updateURL	https://raw.githubusercontent.com/cnleo/userscripts/steamep/steamep-userscript.meta.js
 
-// @updateURL	https://github.com/cnleo/userscripts/steamep/steamep-userscript.meta.js
+// @author		cnleo
 
 // @namespace	cnleo/userscripts
 
@@ -13,7 +14,7 @@
 // @grant       GM_setValue
 
 // @match	https://steamep.com/*
-// @match	http://steamep/*
+// @match	http://steamep.com/*
 
 // @version	0.5.0
 
