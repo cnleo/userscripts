@@ -1,7 +1,12 @@
 # Userscript For Steam Exchange Point ([steamep.com](https://steamep.com/ "Steam Exchange Point"))
 
+### Userscript what?
+
+Userscripts works with [Greasemonkey](http://www.greasespot.net/ "Greasemonkey Website") ([Firefox] (https://addons.mozilla.org/firefox/addon/greasemonkey/ "Firefox Addon")) / [Tampermonkey](https://tampermonkey.net/ "Tampermonkey Website") ([Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo "Chrome Addon"),[Opera](https://addons.opera.com/extensions/details/tampermonkey-beta/ "Opera Addon"),Safari and other) / [Violent Monkey](https://github.com/Violentmonkey/Violentmonkey "Violent Monkey  Website")  ([Opera](https://addons.opera.com/extensions/details/violent-monkey/ "Opera Addon"))
+
 ### Install:
-[Install the Userscript](https://raw.githubusercontent.com/cnleo/userscripts/master/steamep/steamep-userscript.user.js "Install the Userscript")
+
+[Open the link to install the Userscript](https://raw.githubusercontent.com/cnleo/userscripts/master/steamep/steamep-userscript.user.js "https://raw.githubusercontent.com/cnleo/userscripts/master/steamep/steamep-userscript.user.js")
 
 ### What it does on steamep.com:
 
@@ -15,9 +20,15 @@
  *	[0.7]: ADD: Append "inventory marker" (blue dots) and quantity of duplicates on items in other lists
  *	[0.8]: NEED A FIX (currently fuzzy): ADD: Counting on items for nice overview and "haptic"
  
-### Userscript what?
+### To be observed:
 
-### Userscript what?
-Userscripts works with [Greasemonkey](http://www.greasespot.net/ "Greasemonkey Website") ([Firefox] (https://addons.mozilla.org/firefox/addon/greasemonkey/ "Firefox Addon")) / [Tampermonkey](https://tampermonkey.net/ "Tampermonkey Website") ([Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo "Chrome Addon"),[Opera](https://addons.opera.com/extensions/details/tampermonkey-beta/ "Opera Addon"),Safari and other) / [Violent Monkey](https://github.com/Violentmonkey/Violentmonkey "Violent Monkey  Website")  ([Opera](https://addons.opera.com/extensions/details/violent-monkey/ "Opera Addon"))
+ *	After installing your first visit should be https://steamep.com/list/inventory 
+The Userscript will load the information from it, and every time you visit the url, it will be updating the information to use it on the other lists like /list/2 or /list/selected.
+
+### To do:
+
+ *	Counting on items that you can "modify" are fuzzy at moment. Sry for that.
+
+
 
 
