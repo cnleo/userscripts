@@ -18,7 +18,7 @@
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
-// @version	0.8.0
+// @version	0.8.1
 
 // @run-at document-start
 // ==/UserScript==
@@ -406,6 +406,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	var event = new Event('counterViewUpdate');
 	var eventGoToInv = new Event('goToInventory');
+	
+	if (location.pathname == '/list/inventory') {
+		// delete old values to get new values
+		var keys = GM_listValues();
+		for (var i=0, key=null; key=keys[i]; i++) {
+			GM_deleteValue(key);
+		}
+	}
 
 	// all for the counting
 	var observer = new MutationObserver(function(mutations) {
@@ -660,13 +668,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		observer.observe(gameItems[i], config);
 		
-		if (location.pathname == '/list/inventory') {
 		
-			// delete old values
-			var keys = GM_listValues();
-			for (var i=0, key=null; key=keys[i]; i++) {
-				GM_deleteValue(key);
-			}
 			
 			// get item number (unique)
 			var itemData = gameItems[i].getAttribute('data-item'); // get the item number

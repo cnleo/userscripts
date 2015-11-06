@@ -18,7 +18,7 @@
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
-// @version	0.8.0
+// @version	0.8.1
 
 // @run-at document-start
 // ==/UserScript==
