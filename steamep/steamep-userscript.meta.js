@@ -3,8 +3,8 @@
 
 // @description	Expand user experience on steamep.com and fix a small bug (hopefully).
 
-// @downloadURL	https://raw.githubusercontent.com/cnleo/userscripts/steamep/steamep-userscript.user.js
-// @updateURL	https://raw.githubusercontent.com/cnleo/userscripts/steamep/steamep-userscript.meta.js
+// @downloadURL	https://raw.githubusercontent.com/cnleo/userscripts/master/steamep/steamep-userscript.user.js
+// @updateURL	https://raw.githubusercontent.com/cnleo/userscripts/master/steamep/steamep-userscript.meta.js
 
 // @author		cnleo
 
