@@ -12,11 +12,13 @@
 
 // @grant       GM_getValue
 // @grant       GM_setValue
+// @grant       GM_deleteValue
+// @grant       GM_listValues
 
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
-// @version	0.5.0
+// @version	0.8.0
 
 // @run-at document-start
 // ==/UserScript==
@@ -37,7 +39,10 @@
  *
 **/
 
-
+var keys = GM_listValues();
+for (var i=0, key=null; key=keys[i]; i++) {
+  GM_deleteValue(key);
+}
 
 // HELPERS
 function hasClass(ele, cls) {
@@ -656,6 +661,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		observer.observe(gameItems[i], config);
 		
 		if (location.pathname == '/list/inventory') {
+		
+			// delete old values
+			var keys = GM_listValues();
+			for (var i=0, key=null; key=keys[i]; i++) {
+				GM_deleteValue(key);
+			}
+			
 			// get item number (unique)
 			var itemData = gameItems[i].getAttribute('data-item'); // get the item number
 			

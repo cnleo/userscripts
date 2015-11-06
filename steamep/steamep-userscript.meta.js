@@ -12,11 +12,14 @@
 
 // @grant       GM_getValue
 // @grant       GM_setValue
+// @grant       GM_deleteValue
+// @grant       GM_listValues
+
 
 // @match	https://steamep.com/*
 // @match	http://steamep.com/*
 
-// @version	0.5.0
+// @version	0.8.0
 
 // @run-at document-start
 // ==/UserScript==
